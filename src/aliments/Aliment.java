@@ -3,25 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpheritage;
+package aliments;
 
-import animal.Animal;
 
 /**
  *
  * @author diginamic09
  */
-public class Aliment {
+public abstract class Aliment {
     private String nom;
-    private Animal animal;
     
     public Aliment(String nom){
         this.nom=nom;
-        this.animal=null;
-    }
-    
-    public Aliment(Animal animal){
-        this.animal=animal;
-        this.nom=animal.getNom();
     }
 }

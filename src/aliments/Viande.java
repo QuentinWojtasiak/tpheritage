@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package animal.regime;
-
-import aliments.Aliment;
+package aliments;
 
 /**
  *
  * @author diginamic09
  */
-public class Carnivore implements Regime{
-    
-    public Carnivore(){};
-    
-    public void manger(Aliment ali)
-    {};
-    
+public class Viande extends Aliment{
+    private String nom;
+    public Viande(String nom){
+        super(nom);
+    }
+    public String getNom(){
+        return this.nom;
+    }
 }

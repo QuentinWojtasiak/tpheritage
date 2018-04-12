@@ -5,7 +5,7 @@
  */
 package animal.regime;
 
-import tpheritage.Aliment;
+import aliments.Aliment;
 
 /**
  *
