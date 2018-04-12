@@ -6,13 +6,14 @@
 package animal;
 
 import aliments.Aliment;
+import aliments.Viande;
 import animal.regime.Regime;
 
 /**
  *
  * @author diginamic09
  */
-public abstract class Animal extends Aliment{
+public abstract class Animal extends Viande{
     
     private int age;
     private float taille, poids;
@@ -37,5 +38,10 @@ public abstract class Animal extends Aliment{
     public String getNom()
     {
         return this.nom;
+    }
+    
+    public Regime getLeRegime()
+    {
+        return this.leRegime;
     }
 }

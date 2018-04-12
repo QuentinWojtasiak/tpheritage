@@ -6,6 +6,7 @@
 package animal.regime;
 
 import aliments.Aliment;
+import aliments.Viande;
 
 
 /**
@@ -14,7 +15,12 @@ import aliments.Aliment;
  */
 
 public class Omnivore implements Regime{
+    
     public Omnivore(){};
     
-    public void manger(Aliment ali){};
+    public boolean manger(Aliment ali)
+    {
+            return true;
+    };
+    
 }

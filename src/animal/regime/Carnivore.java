@@ -6,6 +6,7 @@
 package animal.regime;
 
 import aliments.Aliment;
+import aliments.Viande;
 
 /**
  *
@@ -15,7 +16,12 @@ public class Carnivore implements Regime{
     
     public Carnivore(){};
     
-    public void manger(Aliment ali)
-    {};
+    public boolean manger(Aliment ali)
+    {
+        if(ali.getClass() != Viande.class)
+            return true;
+        else
+            return false;
+    };
     
 }

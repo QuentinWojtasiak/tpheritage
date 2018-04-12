@@ -13,6 +13,6 @@ import aliments.Aliment;
  */
 public interface Regime {
     
-    public void manger(Aliment aliment);
+    public boolean manger(Aliment aliment);
     
 }
